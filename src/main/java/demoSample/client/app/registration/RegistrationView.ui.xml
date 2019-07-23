@@ -1,0 +1,19 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+             xmlns:g="urn:import:com.google.gwt.user.client.ui">
+    <g:HTMLPanel ui:field="main">
+        <div style="position:relative;left:-250px;">
+            Search record
+            <g:TextBox ui:field="username_edit" />
+        <div style="position:relative;left:600px;width:30%;">
+            <g:Button ui:field="go_to_add_edit" text="New"/>
+        </div>
+            <br></br>
+        </div>
+        <div style="position:relative;left:-500px;">
+            <g:HTMLPanel ui:field="usertable">
+                
+            </g:HTMLPanel>
+        </div>
+    </g:HTMLPanel>
+</ui:UiBinder>

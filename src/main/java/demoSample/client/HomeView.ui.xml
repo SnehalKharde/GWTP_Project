@@ -1,0 +1,20 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+        xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+    <g:HTMLPanel>
+        <div style="position:relative;let:600px;top:70px;font-size:20">
+            <g:Label ui:field="messageLabel" text="Login Page"/></div>
+    <div style="position:relative;let:500px;top:100px">
+        <g:Label ui:field="username" text="Enter name" /></div>
+        <div style="position:relative;let:550px;top:100px">
+            <g:TextBox ui:field="userField" /></div>
+        <div style="position:relative;let:500px;top:110px">
+            <g:Label ui:field="password" text="Enter password"  /></div>
+        <div style="position:relative;let:550px;top:110px">
+            <g:PasswordTextBox ui:field="passwordField"/></div>
+        <g:Label ui:field="trial" />
+
+
+        <div style="position:relative;let:580px;top:120px">
+            <g:Button ui:field="save" text="Save"/></div>
+    </g:HTMLPanel>
+</ui:UiBinder>

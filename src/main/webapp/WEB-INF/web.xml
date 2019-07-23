@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://java.sun.com/xml/ns/javaee"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
+
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <servlet-name>messageServiceImpl</servlet-name>
+        <servlet-class>demoSample.client.app.registration.client.MessageServiceImpl
+        </servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>demoSample.demoSample RegistrationService</servlet-name>
+        <servlet-class>demoSample.client.registration.rpc.RegistrationServiceImpl</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>demoSample.demoSample RegistrationEditService</servlet-name>
+        <servlet-class>demoSample.client.app.registration.registration.edit.rpc.RegistrationEditServiceImpl</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>demoSample.demoSample RegistrationUpdateService</servlet-name>
+        <servlet-class>demoSample.client.app.registration.registration.update.rpc.RegistrationUpdateServiceImpl
+        </servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>demoSample.demoSample RegistrationDeleteService</servlet-name>
+        <servlet-class>demoSample.client.app.registration.registration.delete.rpc.RegistrationDeleteServiceImpl
+        </servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>demoSample.demoSample RegistrationFetchService</servlet-name>
+        <servlet-class>demoSample.client.app.registration.registration.fetch.rpc.RegistrationFetchServiceImpl</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>demoSample.demoSample RegistrationGetAllService</servlet-name>
+        <servlet-class>demoSample.client.app.registration.client.getall.rpc.RegistrationGetAllServiceImpl
+        </servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>messageServiceImpl</servlet-name>
+        <url-pattern>/demoSample/message</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>demoSample.demoSample RegistrationService</servlet-name>
+        <url-pattern>/demoSample/registration</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>demoSample.demoSample RegistrationEditService</servlet-name>
+        <url-pattern>/demoSample/registrationedit</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>demoSample.demoSample RegistrationUpdateService</servlet-name>
+        <url-pattern>/demoSample/registrationupdate</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>demoSample.demoSample RegistrationDeleteService</servlet-name>
+        <url-pattern>/demoSample/registrationdelete</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>demoSample.demoSample RegistrationFetchService</servlet-name>
+        <url-pattern>/demoSample/registrationfetch</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>demoSample.demoSample RegistrationGetAllService</servlet-name>
+        <url-pattern>/demoSample/registrationgetall</url-pattern>
+    </servlet-mapping>
+
+</web-app>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.7.0//EN"
+        "http://gwtproject.org/doctype/2.7.0/gwt-module.dtd">
+<module rename-to='demoSample'>
+    <inherits name='com.google.gwt.user.User'/>
+    <inherits name="com.gwtplatform.mvp.MvpWithEntryPoint"/>
+
+    <extend-configuration-property name="gin.ginjector.modules"
+                                   value="demoSample.client.gin.ClientModule"/>
+
+
+    <source path='client'/>
+    <source path='shared'/>
+
+    //adding Connection parameter
+    <!-- servlet context - path is arbritray, but must match up with the rpc init
+   inside java class -->
+    <!-- Tomcat will listen for this from the server and waits for rpc request in
+   this context
+    <servlet class="demoSample.client.application.dbconnection" path="/PGAdminConnection" />
+    <inherits name="com.google.gwt.user.theme.standard.Standard"/>
+    <inherits name="com.google.gwt.user.theme.chrome.Chrome"/>
+    <inherits name="com.google.gwt.user.theme.dark.Dark"/>-->
+
+    <set-configuration-property name="CssResource.enableGss" value="true"/>
+    <set-configuration-property name="CssResource.legacy" value="true" />
+</module>
